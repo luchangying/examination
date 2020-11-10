@@ -1,0 +1,199 @@
+﻿
+@{
+    Layout = null;
+}
+@using System.Data;
+@{
+    DataSet ds = new DataSet();
+    ds = Model;
+}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - BeginExam</title>
+    <link href="~/Font/css/all.css" rel="stylesheet" />
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/Student/exam-begin.css" rel="stylesheet" />
+    <script src="~/Script/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="exam-content">
+        <div class="begin-paper-title">
+            <div class="paper-title-item">
+                <span>@ViewBag.PaperName</span>
+                <span>发布：@ViewBag.ReleaseTime</span>
+            </div>
+            <div class="paper-title-info-item">
+                <div class="info-item-nar">
+                    <span>考试科目：@ViewBag.CourseName</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>发布教师：@ViewBag.TeacherName</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>考试时长：@(ViewBag.RollOutTime)小时</span>
+                </div>
+                <div class="info-item-nar">
+                    <p id="test_time">@ViewBag.RollOutTime</p>
+                    <span class="count-down-show">考试时间剩余：- </span>
+                </div>
+            </div>
+        </div>
+        <div class="begin-exam-container">
+            <div class="container">
+                <div id="options_list" class="options-list">
+                    <h3>1.选择题：</h3>
+                    <div class="options-box">
+                        <div class="box-temp options-on">1</div>
+                        <div class="box-temp">2</div>
+                        <div class="box-temp">3</div>
+                        <div class="box-temp">4</div>
+                        <div class="box-temp">5</div>
+                        <div class="box-temp">6</div>
+                        <div class="box-temp">7</div>
+                        <div class="box-temp">8</div>
+                        <div class="box-temp">9</div>
+                        <div class="box-temp">10</div>
+                        <div class="box-temp">11</div>
+                        <div class="box-temp">12</div>
+                        <div class="box-temp">13</div>
+                        <div class="box-temp">14</div>
+                        <div class="box-temp">15</div>
+                        <div class="box-temp">16</div>
+                        <div class="box-temp">17</div>
+                        <div class="box-temp">18</div>
+                        <div class="box-temp">19</div>
+                        <div class="box-temp">20</div>
+                    </div>
+                    <h3>2.判断题：</h3>
+                    <div class="options-box">
+                        <div class="box-temp">21</div>
+                        <div class="box-temp">22</div>
+                        <div class="box-temp">23</div>
+                        <div class="box-temp">24</div>
+                        <div class="box-temp">25</div>
+                        <div class="box-temp">26</div>
+                        <div class="box-temp">27</div>
+                        <div class="box-temp">28</div>
+                        <div class="box-temp">29</div>
+                        <div class="box-temp">30</div>
+                    </div>
+                </div>
+                <div id="container_detail" class="container-detail">
+                    @{
+
+                        int numberSingle = 1;
+                        int te = 0;
+                        foreach (DataRow item in ds.Tables[0].Rows)
+                        {
+                            <div class="detail-box">
+                                <div class="detail-title">
+                                    <span>@(numberSingle++).@(item["TitleSkip"])</span>
+                                </div>
+                                <div class="detail-options">
+                                    @{
+                                        string na = "";
+                                        for (int i = 0; i < 4; i++)
+                                        {
+                                            switch (i)
+                                            {
+                                                case 0:
+                                                    na = "A";
+                                                    break;
+                                                case 1:
+                                                    na = "B";
+                                                    break;
+                                                case 2:
+                                                    na = "C";
+                                                    break;
+                                                case 3:
+                                                    na = "D";
+                                                    break;
+                                            }
+                                            switch (ds.Tables[1].Rows[te]["Option"].ToString()[i])
+                                            {
+                                                case 'A':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionTrueA"])</span></div>
+                                                    break;
+                                                case 'B':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionB"])</span></div>
+                                                    break;
+                                                case 'C':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionC"])</span></div>
+                                                    break;
+                                                case 'D':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionD"])</span></div>
+                                                    break;
+                                            }
+                                        }
+
+                                    }
+                                </div>
+                            </div>
+                            te++;
+                        }
+                        numberSingle = 21;
+                        te = 0;
+                        foreach (DataRow item in ds.Tables[2].Rows)
+                        {
+                            <div class="detail-box">
+                                <div class="detail-title">
+                                    <span>@(numberSingle++).@(item["TitleSkip"])</span>
+                                </div>
+                                <div class="detail-options">
+                                    @{
+                                        string na = "";
+                                        for (int i = 0; i < 2; i++)
+                                        {
+                                            switch (i)
+                                            {
+                                                case 0:
+                                                    na = "A";
+                                                    break;
+                                                case 1:
+                                                    na = "B";
+                                                    break;
+                                            }
+                                            switch (ds.Tables[3].Rows[te]["Option"].ToString()[i])
+                                            {
+                                                case 'A':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionTrueA"])</span></div>
+                                                    break;
+                                                case 'B':
+                                                    <div class="detail-option-item"><span>@(na).@(item["OptionB"])</span></div>
+                                                    break;
+                                            }
+                                        }
+
+                                    }
+                                </div>
+                            </div>
+                            te++;
+                        }
+                    }
+                    <div class="detail-foot">
+                        <div id="option_down" class="options-goto">下一题</div>
+                        <div id="option_up" class="options-goto">上一题</div>
+                    </div>
+                </div>
+            </div>
+            <div class="submit-test">
+                <span id="submit_ok">提&nbsp;交</span>
+            </div>
+        </div>
+        <div id="msg_content" class="msg-content">
+            <div class="msg-box">
+                <h3 id="exam_msg"></h3>
+                <p>正在跳转...</p>
+            </div>
+        </div>
+        <div class="begin-paper-foot">
+            <span>Copyright 1998 - 2018 Xihu. All Rights Reserved</span>
+        </div>
+    </div>
+    <script src="~/Script/Student/exam-begin.js"></script>
+</body>
+</html>

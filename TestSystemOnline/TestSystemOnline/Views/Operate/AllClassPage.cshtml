@@ -1,0 +1,111 @@
+﻿
+@{
+    ViewBag.Title = "班级信息";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Data;
+@{
+    DataTable table = new DataTable();
+    table = Model;
+}
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-home fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-home"></i>
+            所有班级信息
+            <span style="font-size: 22px;color: grey;">- All class information</span>
+        </h1>
+        <div class="content-operate">
+            <div class="class-card">
+                <div id="class_table">
+                    @{
+                        if (table != null)
+                        {
+                            foreach (DataRow item in table.Rows)
+                            {
+                                <div class="class-temp">
+                                    <div class="class-box">
+                                        <img id="class_img" src="@(item["ClassImg"].ToString() == "" ? "/Image/Classroom/classtemp.png" : item["ClassImg"])" alt="" />
+                                        <div class="class-cover-img"></div>
+                                        <div class="class-cover-info">
+                                            <div class="class-name">@item["ClassName"]</div>
+                                            <div class="class-master">班主任：@item["Name"]</div>
+                                            <div class="class-detail" onclick='ClassDetail("@item["ID"]")'>详细</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+                <div class="paging">
+                    <div class="class-search ">
+                        <select id="dropClassCountries" name="key">
+                            @{
+                                if (ViewBag.ClassKey == "ClassName")
+                                {
+                                    <option value="ClassName" selected="selected">班级名</option>
+                                    <option value="Name">班主任</option>
+                                }
+                                else
+                                {
+                                    <option value="ClassName">班级名</option>
+                                    <option value="Name" selected="selected">班主任</option>
+                                }
+                            }
+                        </select>
+                        <input id="txtClassSearch" type="text" name="search" placeholder="请输入关键字" value="@ViewBag.SearchValue" />
+                        <button id="btnSearchClassOK" type="button" onclick="ClassQuery()"><span>搜索</span></button>
+                    </div>
+                    <div class="pading-btn" onclick="GotoPage(@(ViewBag.PageIndex + 1))"><i class="fa fa-angle-right"></i></div>
+                    <ul class="paging-ul">
+                        @{
+                            int totalPages = ViewBag.TotalPages;
+                            for (int i = 0; i < totalPages; i++)
+                            {
+                                string temp = (i + 1).ToString();
+                                <li class="pading-li" onclick="GotoPage(@i)">@temp</li>
+
+                            }
+                        }
+                    </ul>
+                    <div class="pading-btn" onclick="GotoPage(@(ViewBag.PageIndex - 1))"><i class="fa fa-angle-left"></i></div>
+                    <div class="pading-info">
+                        <span id="pading_info">共 @(ViewBag.TotalCount) 条/全 @(ViewBag.TotalPages) 页，当前第 @(ViewBag.PageIndex + 1) 页</span>
+                    </div>
+                </div>
+                <div id="class_show_box" class="class-show-box">
+                    <div class="box-content">
+                        <div class="box_close" onclick="CloseBox()"><i class="fa fa-times-circle fa-2x"></i></div>
+                        <div class="show-box-img">
+                            <img id="show_box_img" src="" alt="" />
+                        </div>
+                        <div class="show-box-info">
+                            <div id="show_box_title" class="show-box-title"></div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">班主任&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="class_master"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">专业课程&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="class_course"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">班级人数&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="class_number"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">选修课程&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="other_course"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Operate/all-class-page.js"></script>
+</div>

@@ -1,0 +1,404 @@
+.content {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     overflow: hidden;
+}
+/*header*/
+ .header {
+     position: relative;
+     width: 100%;
+     height: 70px;
+     margin-bottom: 40px;
+     padding: 0 200px;
+     background: rgba(255, 255, 255, 0.46);
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+     z-index: 4;
+}
+ .head-title {
+     position: relative;
+     float: left;
+     width: 350px;
+     height: 70px;
+     text-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+}
+ .head-title a h1 {
+     padding: 0;
+     width: 350px;
+     height: 70px;
+     line-height: 70px;
+}
+ .head-portrait {
+     position: relative;
+     float: right;
+     width: 68px;
+     height: 68px;
+     border: 1px solid rgba(255, 255, 255, .86);
+     box-shadow: 0 2px 3px rgba(0, 0, 0, 0.32);
+     border-radius: 100%;
+     overflow: hidden;
+}
+ .portrait-box {
+     position: relative;
+     width: 66px;
+     height: 66px;
+     transition: .3s;
+     cursor: pointer;
+}
+ .portrait-box img {
+     position: absolute;
+     width: 66px;
+     height: 66px;
+     top: 0;
+     left: 0;
+}
+ .head-welcome {
+     position: relative;
+     text-align: center;
+     float: right;
+     width: 135px;
+     height: 70px;
+     line-height: 70px;
+     font-size: 18px;
+     transition: .2s;
+     cursor: pointer;
+}
+ .head-welcome:hover span {
+     color: #ed2553;
+}
+/*enum-page*/
+ .card {
+     position: fixed;
+     top: 0;
+     right: 0;
+     width: 0;
+     height: 100%;
+     opacity: 0;
+     visibility: hidden;
+     transition: all .3s ease-out;
+     box-shadow: -3px 0 8px rgba(0,0,0,.6);
+     z-index: 30;
+}
+ .card.on {
+     width: 27%;
+     opacity: 1;
+     visibility: visible;
+}
+ .card-image {
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background: url('../Image/card.jpg') no-repeat right center;
+     background-size: auto 100%;
+}
+ .card-gradient {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     left: 0;
+     bottom: 0;
+     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5));
+     z-index: 2;
+}
+ .card-content {
+     position: relative;
+     width: 100%;
+     height: 100%;
+}
+ .card-title {
+     position: relative;
+     padding: 60px 30px;
+     width: 100%;
+     height: 48px;
+}
+ .enum-button-close {
+     width: 48px;
+     color: white;
+     cursor: pointer;
+     float: left;
+}
+ .card-body {
+     position: relative;
+     width: 100%;
+     height: auto;
+     padding: 30px 60px 0;
+}
+ .card-list {
+     position: relative;
+     width: 100%;
+     height: 45px;
+     line-height: 45px;
+     margin: 10px auto;
+     opacity: 0;
+     visibility: hidden;
+     transform: translateX(40px);
+     transition: .3s ease;
+}
+ .card-list.on:before {
+     content: '';
+     position: absolute;
+     left: 0;
+     bottom: 4px;
+     width: 130px;
+     height: 4px;
+     background: #ed2553;
+}
+ .card-list.on a {
+     color: #ed2553;
+    /*#dedb00*/
+}
+ .card-list.on span {
+     color: white;
+}
+ .card-list a {
+     display: block;
+     color: white;
+     width: auto;
+     height: 100%;
+     font-size: 22px;
+     font-weight: 600;
+     transition: transform .3s;
+     transition-delay: 0.3s;
+}
+ .card-list a .list-info {
+     position: absolute;
+     top: 0;
+     left: 40px;
+     padding: 0;
+}
+ .card-list a .chevron {
+     opacity: 0;
+     padding-left: 30px;
+     transition: .3s;
+}
+ .card-list a:hover .chevron {
+     opacity: 1;
+     padding-left: 0;
+}
+ .card.on .card-content .card-body .card-list {
+     opacity: 1;
+     visibility: visible;
+     transform: translateX(0);
+     transition-delay: .3s;
+}
+ .card.on .card-content .card-body .card-list:nth-child(2) {
+     transition-delay: .4s;
+}
+ .card.on .card-content .card-body .card-list:nth-child(3) {
+     transition-delay: .5s;
+}
+ .card.on .card-content .card-body .card-list:nth-child(4) {
+     transition-delay: .6s;
+}
+ .card.on .card-content .card-body .card-list:nth-child(5) {
+     transition-delay: .7s;
+}
+ .card.on .card-content .card-body .card-list:nth-child(6) {
+     transition-delay: .8s;
+}
+/*container*/
+ .container {
+     position: relative;
+     width: 100%;
+     height: 890px;
+     padding: 0 200px;
+     z-index: 3;
+}
+ .container-box {
+     position: relative;
+     width: 100%;
+     height: 800px;
+     border-radius: 3px;
+     background: #ffffff;
+     box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.44);
+}
+ .master-left {
+     position: relative;
+     width: 15%;
+     height: 100%;
+     float: left;
+     padding: 10px 0 10px 10px;
+}
+ .master-welcome {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     background: rgba(195, 195, 195, 0.3);
+     overflow: auto;
+}
+ .master-ruletemp {
+     position: relative;
+     width: 100%;
+     text-align: center;
+}
+ .master-ruletemp p {
+     position: relative;
+     margin: 0 0 35px;
+     padding: 10px 0;
+     color: #ed2553;
+     font-size: 28px;
+     font-weight: 600;
+     display: none;
+}
+ .master-ruletemp p span {
+     display: block;
+     color: #333;
+     font-weight: 600;
+     font-size: 15px;
+}
+ .master-Student p:nth-child(1) {
+     display: block;
+}
+ .master-Teacher p:nth-child(2) {
+     display: block;
+}
+ .master-Admin p:nth-child(3) {
+     display: block;
+}
+ .ruletemp-enum {
+     position: relative;
+     width: 100%;
+}
+.enum-item {
+    position: relative;
+    width:100%;
+    height:auto;
+    border-top:2px solid rgba(213,213,213,.62);
+    box-shadow:0 1px 2px rgba(0,0,0,.16);
+    overflow:hidden;
+    transition:.3s;
+}
+.key-title {
+    position:relative;
+    width:100%;
+    height:50px;
+    line-height:50px;
+    padding-left:20px;
+    font-size:18px;
+    font-weight:600;
+    box-shadow:0 2px 3px rgba(0,0,0,.32);
+    cursor:pointer;
+    z-index:2;
+}
+.key-title-icon {
+    position:absolute;
+    text-align:center;
+    top:0;
+    right:10px;
+    width:50px;
+    height:50px;
+    line-height:50px;
+    transform:rotate(-90deg);
+    transition:.3s;
+}
+.item-list {
+    position:relative;
+    width:100%;
+    height:40px;
+    line-height:30px;
+    opacity:1;
+    background:rgba(255,255,255,0.16);
+    padding:5px 0 5px 40px;
+    cursor:pointer;
+    transition:.2s;
+    z-index:1;
+}
+.item-list span {
+     display:block;
+     transition: .2s;
+}
+.item-list:hover span {
+     transform: translateX(20px);
+}
+.item-list:hover {
+     background: rgba(0, 0, 0, .23);
+}
+.enum-item.close-item .item-list {
+    height:0;
+    opacity:0;
+    padding:0;
+}
+.enum-item.close-item .item-list span {
+    display:none;
+}
+.enum-item.close-item .key-title-icon {
+    transform:rotate(0);
+}
+ #begin_body {
+     opacity: 0;
+     transition: .2s;
+}
+ .master-page {
+     position: relative;
+     width: 85%;
+     height: 100%;
+     float: left;
+     padding: 10px 10px 10px 0;
+}
+/*doubt */
+ .doubt {
+     position: relative;
+     width: 100%;
+     height: 200px;
+     background: #e9e9e9;
+     border-bottom: 1px solid #aaaaaa;
+     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.16);
+     transition: .4s;
+}
+ .doubt-list {
+     position: relative;
+     max-width: 1200px;
+     width: 100%;
+     height: 75%;
+     margin: 0 auto;
+}
+ .doubt-list-items {
+     display: block;
+}
+ .doubt-list-li {
+     position: relative;
+     padding: 5px 10px;
+     float: left;
+     text-align: left;
+     width: 19.99%;
+     height: 200px;
+     overflow: hidden;
+}
+ .doubt-li-item {
+     display: block;
+     width: 100%;
+     height: 100%;
+     padding: 40px 10px;
+     text-align: center;
+}
+ .doubt-li-item p {
+     padding-top: 5px;
+     font-size: 14px;
+}
+/*footer*/
+ .footer {
+     position: relative;
+     width: 100%;
+     height: 50px;
+     border-top: 2px solid rgb(160,160,160);
+}
+ .card-footer {
+     position: absolute;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     height: 50px;
+     background: #333;
+     line-height: 50px;
+     font-size: 14px;
+     font-weight: 300;
+     text-align: center;
+}
+ .card-footer span {
+     padding: 2px 15px;
+     border-radius: 2px;
+     color: white;
+}
+ 

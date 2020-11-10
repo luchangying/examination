@@ -1,0 +1,217 @@
+﻿@using System.Data;
+@using Model;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - TestSystemOnLine</title>
+    @* 基本样式 脚本 *@
+    <link href="~/Font/css/all.css" rel="stylesheet" />
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/main.css" rel="stylesheet" />
+    <script src="~/Script/jquery-3.3.1.min.js"></script>
+    @* 公共功能样式 *@
+    <link href="~/Content/Operate/operate.css" rel="stylesheet" />
+    <link href="~/Content/Operate/own-info.css" rel="stylesheet" />
+    <link href="~/Content/Operate/all-class-page.css" rel="stylesheet" />
+    <link href="~/Content/Operate/all-course-page.css" rel="stylesheet" />
+    <link href="~/Content/Operate/change-photo.css" rel="stylesheet" />
+    <link href="~/Content/Operate/change-pass.css" rel="stylesheet" />
+    @* 教师功能样式 *@
+    <link href="~/Content/Teacher/exam-release.css" rel="stylesheet" />
+    @* 学生功能样式 *@
+    <link href="~/Content/Student/exam-online.css" rel="stylesheet" />
+    <link href="~/Content/Student/exam-query.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="content">
+        <div id="header" class="header">
+            <div class="head-title">
+                <a href="/Home/@(ViewBag.RuleTemp)">
+                    <h1>
+                        Test<span style="color: #ed2553;">system</span><span style="font-size: 22px;"> - OnLine</span>
+                    </h1>
+                </a>
+            </div>
+            <div id="enum_span_open" class="head-welcome">
+                <span>您好！@ViewBag.Name</span>
+            </div>
+            <div id="enum_image_open" class="head-portrait">
+                <div class="portrait-box">
+                    <img id="head_photo" src="@ViewBag.Photo" alt="" />
+                </div>
+            </div>
+        </div>
+        <div id="card" class="card">
+            <div class="card-image">
+                <div class="card-gradient"><!--图片渐变遮罩层--></div>
+            </div>
+            <div class="card-content">
+                <div class="card-title">
+                    <div id="enum_button_close" class="enum-button-close">
+                        <i class="fa fa-window-close fa-3x"></i>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/OwnInfo")'>
+                            <i class="fa fa-user"></i>
+                            <div class="list-info">
+                                查看个人信息
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/AllClassPage?pageIndex=0&key=ClassName&value=")'>
+                            <i class="fa fa-home"></i>
+                            <div class="list-info">
+                                所有班级信息
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/AllCoursePage?pageIndex=0&key=CourseName&value=")'>
+                            <i class="fa fa-book"></i>
+                            <div class="list-info">
+                                所有课程信息
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/ChangePhoto")'>
+                            <i class="fa fa-camera"></i>
+                            <div class="list-info">
+                                修改个人头像
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/ChangePass")'>
+                            <i class="fa fa-unlock-alt"></i>
+                            <div class="list-info">
+                                修改登录密码
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card-list">
+                        <a href="javascript:void(0);" onclick='delayURL("/Operate/Logout")'>
+                            <i class="fa fa-sign-in-alt"></i>
+                            <div class="list-info">
+                                切换用户登录
+                                <span class="chevron"><i class="fa fa-chevron-left"></i></span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-image">
+            <img id="back_img" src="~/Image/back-1.png" alt="">
+            <div class="gradient"><!--图片渐变遮罩层--></div>
+        </div>
+        <div class="container">
+            <div class="container-box">
+                <div class="master-left">
+                    <div class="master-welcome">
+                        <div class="master-ruletemp master-@(ViewBag.RuleTemp)">
+                            <p><i class="fas fa-user"></i> 学生端<span>欢迎登录</span></p>
+                            <p><i class="fas fa-user-tie"></i> 教师端<span>欢迎登录</span></p>
+                            <p><i class="fas fa-users-cog"></i> 管理员<span>欢迎登录</span></p>
+                        </div>
+                        <div id="ruletemp_enum" class="ruletemp-enum">
+                            @{
+                                List<PowerInfo> list = new List<PowerInfo>();
+                                foreach (DataRow item in (ViewBag.PowerEnum as DataTable).Rows)
+                                {
+                                    list.Add(new PowerInfo() { PostName = item[1].ToString(), PowerName = item[3].ToString(), PowerURL = item[4].ToString() });
+                                }
+                                var listGroup = from enums in list
+                                                group enums by enums.PostName into groupPost
+                                                select new
+                                                {
+                                                    Post = groupPost.Key,
+                                                    info = from nameInfo in groupPost
+                                                           select new { Name = nameInfo.PowerName, URL = nameInfo.PowerURL }
+                                                };
+                                foreach (var item in listGroup)
+                                {
+
+                                    <div class="enum-item">
+                                        <div class="key-title">
+                                            <div class="key-title-icon"><i class="fa fa-chevron-left"></i></div>
+                                            <span>@item.Post</span>
+                                        </div>
+                                        @foreach (var temp in item.info)
+                                        {
+                                            <div class="item-list" onclick='delayURL("@temp.URL")'>
+                                                <span>@temp.Name</span>
+                                            </div>
+                                        }
+
+                                    </div>
+
+                                }
+                            }
+
+                        </div>
+                    </div>
+                </div>
+                <div class="master-page" id="begin_body">
+                    @RenderBody()
+                </div>
+            </div>
+        </div>
+        <div class="doubt">
+            <div class="doubt-list">
+                <ul class="doubt-list-items">
+                    <li class="doubt-list-li">
+                        <div class="doubt-li-item">
+                            <a href="javascript:void(0);"><h5>在线服务</h5></a>
+                            <a href="javascript:void(0);"><p>网页报错</p></a>
+                            <a href="javascript:void(0);"><p>账号问题</p></a>
+                        </div>
+                    </li>
+                    <li class="doubt-list-li">
+                        <div class="doubt-li-item">
+                            <a href="javascript:void(0);"><h5>客服中心</h5></a>
+                            <a href="javascript:void(0);"><p>联系客服</p></a>
+                        </div>
+                    </li>
+                    <li class="doubt-list-li">
+                        <div class="doubt-li-item">
+                            <a href="javascript:void(0);"><h5>交流合作</h5></a>
+                            <a href="javascript:void(0);"><p>推荐建议</p></a>
+                            <a href="javascript:void(0);"><p>加入我们</p></a>
+                        </div>
+                    </li>
+                    <li class="doubt-list-li">
+                        <div class="doubt-li-item">
+                            <a href="javascript:void(0);"><h5>联系我们</h5></a>
+                            <a href="javascript:void(0);"><p>电话方式</p></a>
+                        </div>
+                    </li>
+                    <li class="doubt-list-li">
+                        <div class="doubt-li-item">
+                            <a href="javascript:void(0);"><h5>关于我们</h5></a>
+                            <a href="javascript:void(0);"><p>网页团队</p></a>
+                            <a href="javascript:void(0);"><p></p></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="card-footer">
+                <span>Copyright 1998 - 2018 Xihu. All Rights Reserved</span>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/main.js"></script>
+</body>
+</html>

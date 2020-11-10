@@ -1,0 +1,40 @@
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="operate-box">
+    <div id="rule_temp" style="display:none;">@ViewBag.RuleTemp</div>
+    <div class="back-bottom">
+        <i class="fa fa-unlock-alt fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-unlock-alt"></i>
+            修改登录密码
+            <span style="font-size: 22px;color: grey;">- Modify the login password</span>
+        </h1>
+        <div class="content-operate">
+            <form class="form-card">
+                <div class="input-container">
+                    <input type="password" id="txtOldPass" required="required" maxlength="10" />
+                    <label for="txtOldPass">原始密码</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="txtNewPass" required="required" maxlength="10" />
+                    <label for="txtNewPass">重设密码</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" id="txtChePass" required="required" maxlength="10" />
+                    <label for="txtChePass">确认密码</label>
+                </div>
+                <div class="button-container">
+                    <button id="btnOK" type="button"><span>确认</span></button>
+                    <div class="tips">
+                        <div class="msg">&nbsp;</div>
+                    </div>
+                </div>
+            </form>
+            <script src="~/Script/Operate/change-pass.js"></script>
+        </div>
+    </div>
+</div>

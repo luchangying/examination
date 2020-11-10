@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "学生在线考试";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Data;
+@{
+    DataTable table = new DataTable();
+    table = Model;
+}
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-highlighter fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-highlighter"></i>
+            在线考试入口
+            <span style="font-size: 22px;color: grey;">- Exam online entrance</span>
+        </h1>
+        <div class="content-operate">
+            <div class="examonline-card">
+                <div id="exam_list" class="exam-list">
+                    @{
+                        foreach (DataRow item in table.Rows)
+                        {
+                            <div class="exam-list-item">
+                                <div class="examonline-title">
+                                    <h3>@item["PaperTitle"]</h3>
+                                    <p>发布：@((Convert.ToDateTime(item["ReleaseTime"])).ToString("yyyy年MM月dd日HH时mm分"))&nbsp;教师：@item["Name"]&nbsp;科目：@item["CourseName"]</p>
+                                </div>
+                                <div class="examonline-check">
+                                    <h3>距考试入口关闭还有</h3>
+                                    <p class="test-time">@item["TestTime"]</p>
+                                    <p class="count-down-show">-</p>
+                                </div>
+                                <div class="examonline-begin" onclick='ExamBegin("@item["ID"]")'>
+                                    <p>开始考试</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Student/exam-online.js"></script>
+</div>

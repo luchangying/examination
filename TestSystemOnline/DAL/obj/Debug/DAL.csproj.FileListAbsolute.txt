@@ -1,0 +1,162 @@
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\版本0801\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\版本0801\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\版本0801\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\版本0801\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\版本0801\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\版本0801\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\版本0801\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\版本0801\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\考试0803\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\考试0803\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\考试0803\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\考试0803\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\考试0803\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\考试0803\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\考试0803\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\考试0803\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\考试0808\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\考试0808\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\考试0808\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\考试0808\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\考试0808\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\考试0808\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\考试0818\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\考试0818\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\考试0820\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\考试0823\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\考试0823\TestSystemOnline\DAL\obj\Debug\DAL.csprojResolveAssemblyReference.cache
+D:\考试0823\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\考试0823\TestSystemOnline\DAL\obj\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\DAL.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\CommandTools.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\Newtonsoft.Json.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\CommandTools.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\obj\Debug\DAL.csproj.CopyComplete
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\obj\Debug\DAL.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\DAL\obj\Debug\DAL.pdb

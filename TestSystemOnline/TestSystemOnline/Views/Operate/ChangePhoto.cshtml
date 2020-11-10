@@ -1,0 +1,44 @@
+﻿
+@{
+    ViewBag.Title = "个人头像";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-camera fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-camera"></i>
+            修改个人头像
+            <span style="font-size: 22px;color: grey;">- Amend a personal image</span>
+        </h1>
+        <div class="content-operate">
+            <div class="headimg-card">
+                <div class="headimg-top">
+                    <img id="img_big" src="@ViewBag.Photo" alt="" />
+                    <img id="img_small" src="@ViewBag.Photo" alt="" />
+                    <h2>@ViewBag.Name</h2>
+                </div>
+                <div class="headimg-bottom">
+                    @using (Html.BeginForm("ChangePhoto", "Operate", FormMethod.Post, new { enctype = "multipart/form-data" }))
+                    {
+                        <div class="headimg-mess">
+                            <span>请选择您作为头像图片：</span>
+                            <input name="file" type="file" accept=".jpg,.png" id="file_upload" />
+                        </div>
+                        <div class="headimg-btn">
+                            <button id="btnOK" type="submit" disabled="disabled"><span>确认</span></button>
+                            <div class="tips">
+                                <div class="msg">&nbsp;</div>
+                            </div>
+                        </div>
+                    }
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Operate/change-photo.js"></script>
+</div>

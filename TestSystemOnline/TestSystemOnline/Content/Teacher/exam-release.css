@@ -1,0 +1,679 @@
+﻿.teacher-release {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: rgba(195, 195, 195, 0.7);
+}
+
+.release {
+    position: relative;
+    height: 100%;
+    float: left;
+}
+
+.options {
+    width: 70%;
+}
+
+.preview {
+    width: 30%;
+    padding-left: 15px;
+}
+
+.preview-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: rgba(247, 247, 247, 0.7);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.release-options {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.24);
+    background: rgb(247, 247, 247);
+    border-radius: 3px;
+    transition: .3s;
+    z-index: 1;
+}
+
+    .release-options.selected {
+        z-index: 2;
+        opacity: 1;
+    }
+
+.release-btn {
+    position: relative;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    padding: 5px 0;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    z-index: 2;
+}
+
+.tips-options {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    padding: 0 20px;
+    border-left: 5px solid #ed2553;
+}
+
+.release-title {
+    position: relative;
+    float: left;
+}
+
+    .release-title h2 {
+        height: 65px;
+        line-height: 45px;
+        color: #333;
+        font-size: 24px;
+        font-weight: 600;
+    }
+
+    .release-title span {
+        color: rgba(0, 0, 0, 0.6);
+        font-weight: 300;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+.release-search {
+    position: relative;
+    float: right;
+}
+
+.options-search {
+    position: relative;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid #333;
+    background: none;
+    padding: 3px 5px;
+    width: 230px;
+    height: 35px;
+    line-height: 29px;
+    margin: 15px 0;
+}
+
+.options-button {
+    position: relative;
+    display: inline-block;
+    outline: 0;
+    background: none;
+    width: 50px;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    border: 0;
+    transition: .3s ease;
+    cursor: pointer;
+}
+
+.options-list {
+    position: relative;
+    padding: 0 10px;
+    width: 100%;
+    height: 90%;
+    overflow: auto;
+    z-index: 1;
+}
+
+.options-item {
+    position: relative;
+    width: 100%;
+    height: 180px;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #bfb0b0;
+}
+
+    .options-item.judge-item {
+        height: 120px;
+    }
+
+.item-check {
+    position: relative;
+    float: left;
+    width: 5%;
+    height: 100%;
+    padding: 3px;
+    z-index: 3;
+}
+
+.check-box {
+    position: relative;
+    margin: 25px 2px 0;
+    border: 3px solid #494949;
+    width: auto;
+    height: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+    .check-box span {
+        position: absolute;
+        color: red;
+        top: -16px;
+        left: -8px;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: .2s;
+    }
+
+    .check-box.right span {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+.item-question {
+    position: relative;
+    float: left;
+    width: 95%;
+    height: 100%;
+    padding: 3px 5px;
+    font-size: 18px;
+}
+
+.options-id {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+}
+
+.item-question-top {
+    position: relative;
+    width: 100%;
+    padding: 3px;
+    font-weight: 600;
+}
+
+.item-question-down {
+    position: relative;
+    width: 100%;
+    line-height: 33px;
+    font-size: 16px;
+    padding: 3px;
+    font-weight: 400;
+}
+
+.item-option {
+    position: relative;
+    padding-left: 20px;
+    height: 25%;
+    width: 100%;
+}
+
+.exam-info {
+    position: relative;
+    width: 100%;
+}
+
+.exam-info-title {
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.exam-info-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px 20px;
+}
+
+.form-item {
+    position: relative;
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+
+.form-item-left {
+    float: left;
+    width: 30%;
+    height: inherit;
+    text-align: right;
+}
+
+.form-item-right {
+    position: relative;
+    float: left;
+    width: 70%;
+    height: inherit;
+}
+
+    .form-item-right input {
+        position: relative;
+        outline: none;
+        border: 0;
+        background: none;
+        padding: 0 8px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        margin: 7px 0;
+    }
+
+    .form-item-right select {
+        position: relative;
+        outline: none;
+        border: 0;
+        background: white;
+        padding: 0 8px;
+        width: 100%;
+        height: 25px;
+        line-height: 25px;
+        margin: 7px 0;
+        font-weight: 600;
+        border-radius: 3px;
+    }
+
+#txtTestTime {
+    background: white;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.bar {
+    position: absolute;
+    left: -40%;
+    bottom: 0;
+    background: #757575;
+    width: 140%;
+    height: 1px;
+}
+
+    .bar:before, .bar:after {
+        content: '';
+        position: absolute;
+        background: #ed2553;
+        width: 0;
+        height: 2px;
+        transition: .2s ease;
+    }
+
+    .bar:before {
+        left: 50%;
+    }
+
+    .bar:after {
+        right: 50%;
+    }
+
+.form-item-right input:focus ~ .bar:before,
+.form-item-right input:focus ~ .bar:after {
+    width: 50%;
+}
+
+.form-item-right select:focus ~ .bar:before,
+.form-item-right select:focus ~ .bar:after {
+    width: 50%;
+}
+
+.exam-preview {
+    position: relative;
+    width: 100%;
+}
+
+.exam-preview-title {
+    position: relative;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.exam-preview-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px 10px;
+}
+
+.preview-form {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    margin: 0 0 5px;
+    padding: 0 10px;
+    font-size: 18px;
+}
+
+    .preview-form span {
+        height: 40px;
+        padding: 8px 10px;
+        border-bottom: 2px solid #757575;
+    }
+
+.preview-btn {
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    right: 0;
+    top: 0;
+}
+
+    .preview-btn button {
+        position: relative;
+        border: 0;
+        outline: 0;
+        background: #fff;
+        width: 100%;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+.btn-bank-on button {
+    background: rgba(0,0,0,.2);
+    font-weight: 600;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7);
+}
+
+.preview-form.rom .preview-btn {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+    float: left;
+}
+
+.preview-btn button:hover {
+    box-shadow: 1px 1px 4px rgba(0,0,0,.7);
+}
+
+.exam-confirm {
+    position: relative;
+    width: 100%;
+}
+
+.exam-confirm-title {
+    position: relative;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    height: 55px;
+    line-height: 55px;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 20px;
+}
+
+.exam-confirm-form {
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 5px 20px;
+}
+
+.confirm-form {
+    position: relative;
+    width: 100%;
+    height: 65px;
+    line-height: 65px;
+    font-size: 18px;
+}
+
+.confirm-btn {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    padding: 0 10px;
+    float: left;
+}
+
+    .confirm-btn button {
+        position: relative;
+        border: 0;
+        outline: 0;
+        background: #fff;
+        width: 100%;
+        border-radius: 3px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 18px;
+        font-weight: 400;
+        box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+        transition: .3s ease;
+        cursor: pointer;
+    }
+
+        .confirm-btn button:hover {
+            box-shadow: 1px 1px 4px rgba(0,0,0,.7);
+        }
+
+/*弹出层*/
+.show-test-paper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    background: #fff;
+    padding: 0 10px;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: .4s;
+    z-index: -1;
+}
+
+.teacher-release.selected-paper .show-test-paper {
+    z-index: 10;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.paper-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(247, 247, 247, 0.7);
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.24);
+}
+
+.paper-title {
+    position: relative;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    background: rgba(255, 255, 255, 0.65);
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.27);
+    height: 13%;
+    line-height: 13%;
+    width: 100%;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+    .paper-title h3 {
+        text-align: center;
+        height: 60px;
+        line-height: 60px;
+        padding: 0;
+        font-weight: 600;
+    }
+
+.paper-title-info {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+}
+
+.close-paper {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.class-info-box {
+    position: relative;
+    width: 900px;
+    margin: 0 auto;
+    height: 40px;
+}
+
+    .class-info-box ul {
+        position: relative;
+        width: 100%;
+        height: 40px;
+        display: inline-block;
+    }
+
+        .class-info-box ul li {
+            position: relative;
+            font-size: 14px;
+            float: left;
+            text-align: center;
+            width: 25%;
+            height: 40px;
+            display: block;
+            font-weight: 300;
+        }
+
+.paper-options {
+    position: relative;
+    width: 100%;
+    height: 87%;
+    padding: 3px 0;
+    overflow: auto;
+}
+
+.selected-options-item {
+    position: relative;
+    width: 100%;
+    height: 120px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+    border-bottom: 1px dashed #bfb0b0;
+}
+
+.selected-item-question {
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 100%;
+    padding: 3px 5px;
+    font-size: 18px;
+}
+
+.selected-item-top {
+    position: relative;
+    width: 100%;
+    padding: 10px 10px 10px 0;
+    font-weight: 600;
+}
+
+.selected-item-down {
+    position: relative;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px;
+    font-weight: 400;
+}
+
+.selected-option {
+    padding: 5px 10px;
+    width: 25%;
+    float: left;
+}
+
+.message-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: rgba(213,213,213,0.65);
+    border-radius: 3px;
+    opacity: 0;
+    z-index: 0;
+    transition: .3s;
+}
+
+    .message-box.open {
+        opacity: 1;
+        z-index: 12;
+    }
+
+.box-info {
+    position: absolute;
+    top: 30%;
+    left: 32%;
+    width: 36%;
+    height: 240px;
+    text-align: center;
+    box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.82);
+    border-radius: 3px;
+    background: #fff;
+    font-weight: 600;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: .3s ease-in;
+    z-index: 13;
+}
+
+.message-box.open .box-info {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.box-close-ico {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    padding: 10px 30px 0 0;
+    text-align: right;
+}
+
+    .box-close-ico i {
+        cursor: pointer;
+    }
+
+.box-content-info {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    line-height: 160px;
+}

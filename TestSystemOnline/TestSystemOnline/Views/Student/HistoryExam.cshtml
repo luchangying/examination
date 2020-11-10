@@ -1,0 +1,188 @@
+﻿
+@{
+    Layout = null;
+}
+@using System.Data;
+@{
+    DataSet ds = new DataSet();
+    ds = Model;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - HistoryExam</title>
+    <link href="~/Font/css/all.css" rel="stylesheet" />
+    <link href="~/Content/reset.css" rel="stylesheet" />
+    <link href="~/Content/Student/exam-history.css" rel="stylesheet" />
+    <script src="~/Script/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="exam-history-content">
+        <div class="history-paper-title">
+            <div class="history-title-item">
+                <span>@ViewBag.PaperName</span>
+                <span>发布：@ViewBag.ReleaseTime</span>
+            </div>
+            <div class="history-title-info-item">
+                <div class="info-item-nar">
+                    <span>考试科目：@ViewBag.CourseName</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>发布教师：@ViewBag.TeacherName</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>考试时长：@(ViewBag.RollOutTime)小时</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>考试得分：@(ViewBag.ResultPoint)分</span>
+                </div>
+                <div class="info-item-nar">
+                    <span>完成时间：@ViewBag.OverTime</span>
+                </div>
+            </div>
+        </div>
+        <div class="history-paper-detail">
+            @{
+                int numberSingle = 1;
+                int te = 0;
+                int ta = 0;
+                foreach (DataRow item in ds.Tables[0].Rows)
+                {
+                    <div class="detail-item">
+                        <div class="history-item-top">
+                            <span>@(numberSingle++).@(item["TitleSkip"])</span>
+                        </div>
+                        <div class="history-item-middle">
+                            @{
+                                string na = "";
+                                for (int i = 0; i < 4; i++)
+                                {
+                                    switch (i)
+                                    {
+                                        case 0:
+                                            na = "A";
+                                            break;
+                                        case 1:
+                                            na = "B";
+                                            break;
+                                        case 2:
+                                            na = "C";
+                                            break;
+                                        case 3:
+                                            na = "D";
+                                            break;
+                                    }
+                                    switch (ds.Tables[1].Rows[te]["Option"].ToString()[i])
+                                    {
+                                        case 'A':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionTrueA"])</span></div>
+                                            break;
+                                        case 'B':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionB"])</span></div>
+                                            break;
+                                        case 'C':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionC"])</span></div>
+                                            break;
+                                        case 'D':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionD"])</span></div>
+                                            break;
+                                    }
+                                }
+
+                            }
+                        </div>
+                        <div class="history-item-bottom">
+                            <div class="detail-option-detail">
+                                正确答案：
+                                @{
+                                    switch (ds.Tables[1].Rows[te]["Option"].ToString().IndexOf('A'))
+                                    {
+                                        case 0:
+                                            @("A")
+                                            break;
+                                        case 1:
+                                            @("B")
+                                            break;
+                                        case 2:
+                                            @("C")
+                                            break;
+                                        case 3:
+                                            @("D")
+                                            break;
+                                    }
+                                }
+                            </div>
+                            <div class="detail-option-detail">你的选择：@(ds.Tables[4].Rows[ta]["Option"].ToString())</div>
+                        </div>
+                    </div>
+                    te++;
+                    ta++;
+                }
+                numberSingle = 21;
+                te = 0;
+                foreach (DataRow item in ds.Tables[2].Rows)
+                {
+                    <div class="detail-item">
+                        <div class="history-item-top">
+                            <span>@(numberSingle++).@(item["TitleSkip"])</span>
+                        </div>
+                        <div class="history-item-middle">
+                            @{
+                                string na = "";
+                                for (int i = 0; i < 2; i++)
+                                {
+                                    switch (i)
+                                    {
+                                        case 0:
+                                            na = "A";
+                                            break;
+                                        case 1:
+                                            na = "B";
+                                            break;
+                                    }
+                                    switch (ds.Tables[3].Rows[te]["Option"].ToString()[i])
+                                    {
+                                        case 'A':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionTrueA"])</span></div>
+                                            break;
+                                        case 'B':
+                                            <div class="detail-option-info"><span>@(na):@(item["OptionB"])</span></div>
+                                            break;
+                                    }
+                                }
+
+                            }
+                        </div>
+                        <div class="history-item-bottom">
+                            <div class="detail-option-detail">
+                                正确答案：
+                                @{
+                                    switch (ds.Tables[3].Rows[te]["Option"].ToString().IndexOf('A'))
+                                    {
+                                        case 0:
+                                            @("A")
+                                            break;
+                                        case 1:
+                                            @("B")
+                                            break;
+                                    }
+                                }
+                            </div>
+                            <div class="detail-option-detail">你的选择：@(ds.Tables[4].Rows[ta]["Option"].ToString())</div>
+                        </div>
+                    </div>
+                    te++;
+                    ta++;
+                }
+            }
+        </div>
+        <div class="history-paper-foot">
+            <span>Copyright 1998 - 2018 Xihu. All Rights Reserved</span>
+        </div>
+    </div>
+    <script src="~/Script/Student/exam-history.js"></script>
+</body>
+</html>

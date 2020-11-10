@@ -1,0 +1,302 @@
+﻿.class-card {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.41);
+    padding: 30px 110px 20px 110px;
+    overflow: hidden;
+}
+
+.class-temp {
+    position: relative;
+    width: 100%;
+    height: 110px;
+    padding: 10px 0;
+}
+
+.class-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 2px solid #808080;
+    border-radius: 3px;
+    overflow: hidden;
+    background: #ffffff;
+    box-shadow: 2px 2px 3px rgba(128, 128, 128, 0.35);
+    cursor: pointer;
+}
+
+.class-box img {
+    position: absolute;
+    width: 40%;
+    height: auto;
+    top: -30px;
+    left: 0;
+    transition: .3s;
+}
+
+.class-cover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), #fff);
+}
+
+.class-cover-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.69);
+    padding-left: 25%;
+    padding-top: 30px;
+    transition: .3s;
+}
+
+.class-name {
+    font-size: 20px;
+    font-weight: 600;
+    transition: .3s;
+}
+
+.class-master {
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: .3s;
+}
+
+.class-detail {
+    position: absolute;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 12px;
+    font-weight: 600;
+    bottom: 10px;
+    right: 10px;
+    color: #ed2553;
+    cursor: pointer;
+}
+
+.class-box:hover .class-name {
+    transform: translateY(-10px);
+}
+
+.class-box:hover .class-master {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.class-box:hover .class-cover-info {
+    background: rgba(128, 128, 128, 0.35);
+}
+
+.class-detail:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+
+.paging {
+    position: absolute;
+    bottom: 25px;
+    padding: 0 110px;
+    left: 0;
+    width: 100%;
+    height: 30px;
+}
+
+.class-search {
+    position: relative;
+    float: left;
+    width: 400px;
+    height: 30px;
+    line-height: 30px;
+    margin-left: 10px;
+    padding: 0 3px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    background: #FFF;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 12px;
+}
+#dropClassCountries {
+    text-align:center;
+    width: 20%;
+    height: 30px;
+    float: left;
+    border:0;
+    background: none;
+}
+#txtClassSearch {
+	position: relative;
+    padding: 0 3px;
+    float: left;
+    outline: none;
+	background: none;
+	width: 60%;
+	height: 30px;
+    line-height: 30px;
+	border: 0;
+	font-weight: 400;
+}
+
+#btnSearchClassOK {
+    position: relative;
+    outline: 0;
+    text-align:center;
+    float: left;
+    background: rgba(128, 128, 128, 0.35);
+    width: 20%;
+    margin:3px 0;
+    height: 22px;
+    line-height: 22px;
+    border-radius: 3px;
+    font-weight:400;
+    border: 0;
+    cursor: pointer;
+}
+#btnSearchClassOK:hover {
+    background:rgba(128, 128, 128, .6);
+}
+.pading-btn {
+    position: relative;
+    float: right;
+    margin: 0 2px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 3px;
+    text-align: center;
+    background: #fff;
+    cursor: pointer;
+}
+
+.paging-ul {
+    position: relative;
+    float: right;
+    cursor: pointer;
+}
+
+.pading-li {
+    position: relative;
+    float: left;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    margin: 0 2px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 3px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pading-info {
+    position: relative;
+    float: right;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 5px;
+    border: 1px solid rgba(128, 128, 128, 0.35);
+    border-radius: 3px;
+    background: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.pading-btn:hover,
+.pading-li:hover {
+    background: rgba(128, 128, 128, 0.35);
+}
+
+.class-show-box {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 3px;
+    background: #fff;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 0;
+}
+
+.box-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 30px 110px 20px 110px;
+}
+
+.box_close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    cursor: pointer;
+    
+}
+.box_close i {
+    transition: .2s;
+}
+.box_close:hover i {
+    transform: scale(1.1);
+}
+
+.show-box-img {
+    position: relative;
+    width: 30%;
+    height: 100%;
+    padding: 40px 10px 0;
+    float: left;
+}
+
+    .show-box-img img {
+        border: 1px solid #808080;
+        border-radius: 3px;
+        box-shadow: 2px 2px 4px rgba(0,0,0,.42);
+    }
+
+.show-box-title {
+    position: relative;
+    width: 100%;
+    height: 70px;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(121, 108, 108, 0.75);
+}
+
+.show-box-info {
+    position: relative;
+    width: 70%;
+    height: 100%;
+    padding: 20px 10px 0;
+    float: left;
+}
+
+.box-info-bar div {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+
+.box-info-bar .box-info-left {
+    width: 35%;
+    font-weight: 600;
+    text-align: right;
+}
+
+.box-info-bar .box-info-right {
+    width: 65%;
+    text-align: left;
+}

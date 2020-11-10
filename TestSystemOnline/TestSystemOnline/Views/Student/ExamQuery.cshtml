@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "历史考试信息";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Data;
+@{
+    DataTable table = new DataTable();
+    table = Model;
+}
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-history fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-history"></i>
+            历史考试信息
+            <span style="font-size: 22px;color: grey;">- History examination information</span>
+        </h1>
+        <div class="content-operate">
+            <div class="examquery-card">
+                <div id="exam_list" class="exam-list">
+                    @{
+                        foreach (DataRow item in table.Rows)
+                        {
+                            <div class="exam-query-list">
+                                <div class="examquery-title">
+                                    <h3>@item["PaperTitle"]</h3>
+                                    <p>科目：@item["CourseName"]</p>
+                                </div>
+                                <div class="examquery-overtime">
+                                    <h3>提交时间</h3>
+                                    <p>@((Convert.ToDateTime(item["OverTime"])).ToString("yyyy年MM月dd日HH时mm分"))</p>
+                                </div>
+                                <div class="examquery-result">
+                                    <h3>@item["Result"]分</h3>
+                                </div>
+                                <div class="examquery-show" onclick='ShowResultDetail("@item["ID"]")'>
+                                    <p>查看详细</p>
+                                </div>
+                            </div>
+                        }
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Student/exam-query.js"></script>
+</div>
+

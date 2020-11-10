@@ -1,0 +1,56 @@
+试卷随机思路 ，及评分思路
+
+A1 B2 C3 D4
+
+BCDA,ADCB,ACBD,BADC
+
+1     3   4     2
+
+foreach (datarow item in table.rows)
+{
+	switch（array[i].tostring()[0]）
+	{
+		case "A"
+			item["trueA"],
+		case "B"
+			item["B"]
+	}
+	switch（array[i].tostring()[1]）
+	{
+		case "A"
+			item["trueA"],
+		case "B"
+			item["B"]
+	}
+}
+
+
+for(int i = 0; i< array.length ; i++)
+{
+	if(array[i].tostring()[(string[i])] == A)
+	{
+		+1fen;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

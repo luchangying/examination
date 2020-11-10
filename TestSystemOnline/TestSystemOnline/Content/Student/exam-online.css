@@ -1,0 +1,117 @@
+﻿.examonline-card {
+    position: relative;
+    width: 100%;
+    height: 550px;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.41);
+    padding: 10px 0;
+    overflow: hidden;
+}
+
+.exam-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    padding: 10px 0;
+}
+
+.exam-list-item {
+    position: relative;
+    width: 90%;
+    height: 80px;
+    line-height: 80px;
+    background: #fff;
+    margin: 10px auto;
+    padding: 0 30px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.41);
+    cursor: pointer;
+    transition: .2s;
+}
+
+.examonline-title {
+    position: relative;
+    float: left;
+    width: 65%;
+    height: inherit;
+}
+
+    .examonline-title h3 {
+        padding: 0;
+        height: 50px;
+        line-height: 50px;
+        font-size: 22px;
+        font-weight: 300;
+    }
+
+    .examonline-title p {
+        padding: 0;
+        height: 30px;
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: 300;
+        transition: .2s;
+        color: gray;
+    }
+
+.examonline-check {
+    position: relative;
+    float: left;
+    width: 20%;
+    height: inherit;
+    line-height: inherit;
+    text-align: center;
+}
+
+    .examonline-check h3 {
+        padding: 0;
+        height: 40px;
+        line-height: 55px;
+        font-size: 16px;
+        font-weight: 300;
+        transition: .2s;
+    }
+
+.test-time {
+    display: none;
+}
+
+.count-down-show {
+    padding: 0;
+    height: 40px;
+    line-height: 25px;
+    color: #ed2553;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s;
+}
+
+.examonline-begin {
+    position: relative;
+    float: left;
+    width: 15%;
+    height: inherit;
+}
+
+    .examonline-begin p {
+        padding: 0;
+        height: 80px;
+        line-height: 80px;
+        font-size: 16px;
+        font-weight: 600;
+        text-align: center;
+        color: #333;
+        transition: .2s;
+    }
+    .examonline-begin:hover p {
+        transform: translateX(20px);
+    }
+
+.exam-list-item:hover {
+    background: rgb(208, 192, 192);
+}
+
+    .exam-list-item:hover .examonline-title p {
+        color: white;
+    }

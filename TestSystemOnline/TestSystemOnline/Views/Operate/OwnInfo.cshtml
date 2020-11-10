@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "个人信息";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-user fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-user"></i>
+            查看个人信息
+            <span style="font-size: 22px;color: grey;">- View personal information</span>
+        </h1>
+        <div class="content-operate">
+            <div class="own-card">
+                <div class="own-img">
+                    <img id="own_photo" src="@ViewBag.Photo" alt="" />
+                    <h2>@ViewBag.Name</h2>
+                </div>
+                <div class="own-info">
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">账号&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.LoginID</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">性别&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.Sex</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">年龄&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.Age</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">身份&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.RuleName</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">职位&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.PostName</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">修改时间&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.ChangeTime</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">班级&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.ClassName</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">班主任&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.ClassMaster</div>
+                    </div>
+                    <div class="info-bar">
+                        <div class="info-bar-lfet">专业&nbsp;:&nbsp;</div>
+                        <div class="info-bar-right">@ViewBag.CourseName</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Operate/own-info.js"></script>
+</div>
+

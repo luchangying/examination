@@ -1,0 +1,53 @@
+﻿.own-card {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.41);
+    padding: 30px 100px 20px 100px;
+    overflow: hidden;
+}
+.own-img {
+    position: relative;
+    text-align:center;
+    float: left;
+    width: 30%;
+    height: 440px;
+    padding:20px 10px;
+}
+#own_photo {
+    width:100%;
+    height:auto;
+    border: 1px solid #808080;
+    border-radius:3px;
+    box-shadow:2px 2px 4px rgba(0,0,0,.42);
+}
+.own-info {
+    position: relative;
+    float: left;
+    width: 70%;
+    padding:20px 10px;
+}
+.info-bar {
+    position:relative;
+    min-width:500px;
+    width:100%;
+    height: 50px;
+    padding: 10px;
+    font-size:20px;
+    font-weight:500;
+}
+.info-bar div {
+    height: 30px;
+    line-height: 30px;
+    float: left;
+}
+.info-bar .info-bar-lfet {
+    width:25%;
+    font-weight:600;
+    text-align:right;
+}
+.info-bar .info-bar-right {
+    width:75%;
+    text-align:left;
+}

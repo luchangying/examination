@@ -1,0 +1,88 @@
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\版本0801\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\版本0801\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\版本0801\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\版本0801\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\版本0801\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.2\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\考试0803\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\考试0803\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\考试0803\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\考试0803\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\考试0803\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0808\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\考试0808\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\考试0808\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\考试0808\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\考试0808\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\考试0808\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0814\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二周项目1.3\考试0818\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\考试0818\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\考试0818\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\考试0818\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\考试0818\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\考试0818\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\考试0820\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\考试0820\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\考试0820\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\考试0820\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\考试0820\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\考试0820\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0822\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\考试0823\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\考试0823\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\考试0823\TestSystemOnline\Model\obj\Debug\Model.csprojResolveAssemblyReference.cache
+D:\考试0823\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\考试0823\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\bin\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\bin\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\obj\Debug\Model.dll
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\obj\Debug\Model.pdb
+D:\文档管理\ASP.NET 实例项目\厚浦IT\第二次项目\0823\TestSystemOnline\Model\obj\Debug\Model.csprojAssemblyReference.cache

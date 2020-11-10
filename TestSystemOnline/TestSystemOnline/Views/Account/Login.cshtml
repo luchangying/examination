@@ -1,0 +1,156 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> @ViewBag.Title - TestSystemOnLine</title>
+    <link rel="stylesheet" href="~/Content/reset.css" />
+    <link rel="stylesheet" href="~/Content/login.css" />
+    <link rel="stylesheet" href="~/Font/css/all.css" />
+    <script src="~/Script/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="header">
+            <div class="header-box">
+                <div class="header-title">
+                    <h1>Test System Online</h1>
+                    <span>Build <i class="fas fa-code" style="color: #ed2553;"></i> by <a>Team of Xihu</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="container" class="container-box student">
+                <div id="student" class="box student">
+                    <div class="title-min">
+                        <h5><i class="fas fa-user"></i></h5>
+                        <p>学</p>
+                        <p>生</p>
+                        <p>端</p>
+                        <p><span>Student</span></p>
+                    </div>
+                    <div class="card">
+                        <h1 class="title-max"><i class="fas fa-user"></i> 学生端<span> - 登录</span></h1>
+                        <form>
+                            <div class="input-container">
+                                <input type="text" id="txtStudentLoginID" name="studentLoginId" required="required" value="2016031202" />
+                                <label for="txtStudentLoginID">账号</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" id="txtStudentPass" name="studentLoginPass" required="required" value="123" />
+                                <label for="txtStudentPass">密码</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="txtStudentText" required="required" />
+                                <label for="txtStudentText">验证码</label>
+                                <div class="bar"></div>
+                                <div class="reg-code">
+                                    <img src="/Account/CheckCode?ID=1" id="imgCode_1" alt="click to new" title="刷新" onclick="ClickRemoveChangeCode()" />
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button id="btnStudentOK" type="button"><span>GO</span></button>
+                                <div class="student_tips">
+                                    <div class="tips_msg">&nbsp;</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="teacher" class="box teacher">
+                    <div class="title-min">
+                        <h5><i class="fas fa-user-tie"></i></h5>
+                        <p>教</p>
+                        <p>师</p>
+                        <p>端</p>
+                        <p><span>Teacher</span></p>
+                    </div>
+                    <div class="card">
+                        <h1 class="title-max"><i class="fas fa-user-tie"></i> 教师端<span> - 登录</span></h1>
+                        <form>
+                            <div class="input-container">
+                                <input type="text" id="txtTeacherLoginID" required="required" value="T05601" />
+                                <label for="txtTeacherLoginID">账号</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" id="txtTeacherPass" required="required" value="123" />
+                                <label for="txtTeacherPass">密码</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="txtTeacherText" required="required" />
+                                <label for="txtTeacherText">验证码</label>
+                                <div class="bar"></div>
+                                <div class="reg-code">
+                                    <img src="/Account/CheckCode?ID=1" id="imgCode_2" alt="click to new" title="刷新" onclick="ClickRemoveChangeCode()" />
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button id="btnTeacherOK" type="button"><span>GO</span></button>
+                                <div class="teacher_tips">
+                                    <div class="tips_msg">&nbsp;</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div id="admin" class="box admin">
+                    <div class="title-min">
+                        <h5><i class="fas fa-users-cog"></i></h5>
+                        <p>管</p>
+                        <p>理</p>
+                        <p>员</p>
+                        <p><span>Admin</span></p>
+                    </div>
+                    <div class="card">
+                        <h1 class="title-max"><i class="fas fa-users-cog"></i> 管理员<span> - 登录</span></h1>
+                        <form>
+                            <div class="input-container">
+                                <input type="text" id="txtAdminLoginID" required="required" value="A011001" />
+                                <label for="txtAdminLoginID">账号</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" id="txtAdminPass" required="required" value="123" />
+                                <label for="txtAdminPass">密码</label>
+                                <div class="bar"></div>
+                            </div>
+                            <div class="input-container">
+                                <input type="text" id="txtAdminText" required="required" />
+                                <label for="txtAdminText">验证码</label>
+                                <div class="bar"></div>
+                                <div class="reg-code">
+                                    <img src="/Account/CheckCode?ID=1" id="imgCode_3" alt="click to new" title="刷新" onclick="ClickRemoveChangeCode()" />
+                                </div>
+                            </div>
+                            <div class="button-container">
+                                <button id="btnAdminOK" type="button"><span>GO</span></button>
+                                <div class="admin_tips">
+                                    <div class="tips_msg">&nbsp;</div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="back-image">
+            <img id="back_img" src="~/Image/back-1.png" alt="">
+            <div class="gradient"><!--图片渐变遮罩层--></div>
+        </div>
+        <div class="footer">
+            <div class="footer-title"></div>
+        </div>
+    </div>
+    <script src="~/Script/login.js"></script>
+</body>
+</html>

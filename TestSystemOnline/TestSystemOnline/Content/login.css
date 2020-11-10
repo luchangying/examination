@@ -1,0 +1,388 @@
+.content{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+}
+.header{
+	position: relative;
+	width: 100%;
+	height: 200px;
+}
+.header-box{
+	position: relative;
+	max-width: 1200px;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding-top: 30px;
+}
+.header-title{
+	letter-spacing: 2px;
+	text-align: center;
+}
+.header-title h1 {
+	margin: 0 0 20px;
+	font-size: 48px;
+	font-weight: 300;
+}
+.header-title span {
+	font-size: 12px;
+}
+.header-title span a {
+	color: #ed2553;
+	font-weight: 600;
+	text-decoration: none;
+}
+.container{
+	position: relative;
+	width: 100%;
+	height: 680px;
+}
+.container-box{
+	position: relative;
+	max-width: 540px;
+	width: 100%;
+	height: 580px;
+	margin: 0 auto;
+	padding-top: 120px;
+	opacity: 0;
+	transition: .5s;
+}
+.box{
+	position: relative;
+	width: 50px;
+	height: 505px;
+	float: left;
+	transition: .3s;
+	transform: translateY(20px);
+	box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.24);
+	background: #ffffff;
+}
+.box .title-min{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding-top: 60px;
+	text-align: center;
+}
+.box .title-min h5{
+	color: #ed2553;
+	font-size: 18px;
+	font-weight: 300;
+}
+.box .title-min span{
+	color: #cdd3cf;
+	font-weight: 600;
+	font-size: 9px;
+	text-decoration: none;
+}
+/*学生*/
+.container-box.student .student{
+	width: 440px;
+	height: 550px;
+	transform: translateY(0);
+	border-radius: 5px;
+	z-index: 10;
+}
+.container-box.student .student .title-min{
+	display: none;
+}
+.container-box.student .student .card .title-max,
+.container-box.student .student .card .input-container,
+.container-box.student .student .card .button-container {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: .3s ease;
+}
+.container-box.student .student .card .title-max {
+	transition-delay: .3s;
+}
+.container-box.student .student .card .input-container {
+	transition-delay: .4s;
+}
+.container-box.student .student .card .input-container:nth-child(2) {
+	transition-delay: .5s;
+}
+.container-box.student .student .card .input-container:nth-child(3) {
+	transition-delay: .6s;
+}
+.container-box.student .student .card .button-container {
+	transition-delay: .7s;
+}
+.container-box.student .teacher{
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	z-index: 9;
+}
+.container-box.student .admin{
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	height: 465px;
+	transform: translateY(40px);
+	z-index: 8;
+}
+/*教师*/
+.container-box.teacher .teacher{
+	transform: translateY(0);
+	width: 440px;
+	height: 550px;
+	border-radius: 5px;
+	z-index: 10;
+}
+.container-box.teacher .teacher .title-min{
+	display: none;
+}
+.container-box.teacher .teacher .card .title-max,
+.container-box.teacher .teacher .card .input-container,
+.container-box.teacher .teacher .card .button-container {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: .3s ease;
+}
+.container-box.teacher .teacher .card .title-max {
+	transition-delay: .3s;
+}
+.container-box.teacher .teacher .card .input-container {
+	transition-delay: .4s;
+}
+.container-box.teacher .teacher .card .input-container:nth-child(2) {
+	transition-delay: .5s;
+}
+.container-box.teacher .teacher .card .input-container:nth-child(3) {
+	transition-delay: .6s;
+}
+.container-box.teacher .teacher .card .button-container {
+	transition-delay: .7s;
+}
+.container-box.teacher .student{
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	z-index: 9;
+}
+.container-box.teacher .admin{
+	cursor: pointer;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	z-index: 9;
+}
+/*管理员*/
+.container-box.admin .admin{
+	transform: translateY(0);
+	width: 440px;
+	height: 550px;
+	border-radius: 5px;
+	z-index: 10;
+}
+.container-box.admin .admin .title-min{
+	display: none;
+}
+.container-box.admin .admin .card .title-max,
+.container-box.admin .admin .card .input-container,
+.container-box.admin .admin .card .button-container {
+	left: 0;
+	opacity: 1;
+	visibility: visible;
+	transition: .3s ease;
+}
+.container-box.admin .admin .card .title-max {
+	transition-delay: .3s;
+}
+.container-box.admin .admin .card .input-container {
+	transition-delay: .4s;
+}
+.container-box.admin .admin .card .input-container:nth-child(2) {
+	transition-delay: .5s;
+}
+.container-box.admin .admin .card .input-container:nth-child(3) {
+	transition-delay: .6s;
+}
+.container-box.admin .admin .card .button-container {
+	transition-delay: .7s;
+}
+.container-box.admin .student{
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	height: 465px;
+	transform: translateY(40px);
+	z-index: 8;
+}
+.container-box.admin .teacher{
+	cursor: pointer;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	z-index: 9;
+}
+/*card*/
+.card{
+	position: relative;
+	width: 100%;
+	height: auto;
+	padding: 40px 0 20px 0;
+	overflow: hidden;
+}
+.card .title-max{
+	position: relative;
+	border-left: 5px solid #ed2553;
+	margin: 0 0 35px;
+	padding: 10px 0 10px 50px;
+	color: #ed2553;
+	font-size: 32px;
+	font-weight: 600;
+}
+.card .title-max span{
+	color: #c3c9c5;
+	font-weight: 600;
+	font-size: 15px;
+}
+.card .input-container {
+	position: relative;
+	margin: 0 60px 40px;
+}
+.card .input-container input {
+	outline: none;
+	z-index: 1;
+	position: relative;
+	background: none;
+	width: 100%;
+	height: 60px;
+	border: 0;
+	color: #212121;
+	font-size: 24px;
+	font-weight: 400;
+}
+.card .input-container:nth-child(3) input {
+	width: 60%;
+}
+.card .input-container input:focus ~ label {
+	color: #9d9d9d;
+	transform: translate(-12%, -60%) scale(0.75);
+}
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+	width: 50%;
+}
+.card .input-container input:valid ~ label {
+	color: #9d9d9d;
+	transform: translate(-12%, -60%) scale(0.75);
+}
+.card .input-container label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	color: #757575;
+	font-size: 20px;
+	font-weight: 300;
+	line-height: 60px;
+	transition: 0.2s ease;
+}
+.card .input-container .bar {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #757575;
+	width: 100%;
+	height: 1px;
+}
+.card .input-container:nth-child(3) .bar {
+	width: 60%;
+}
+.card .input-container .reg-code {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40%;
+	height: 100%;
+    cursor: pointer;
+}
+.reg-code img {
+    width: 97%;
+    height:100%;
+    border-radius: 3px;
+    border:1px solid #9d9d9d;
+    margin-left:3px;
+}
+.card .input-container .bar:before, .card .input-container .bar:after {
+	content: '';
+	position: absolute;
+	background: #ed2553;
+	width: 0;
+	height: 2px;
+	transition: .2s ease;
+}
+.card .input-container .bar:before {
+	left: 50%;
+}
+.card .input-container .bar:after {
+	right: 50%;
+}
+.card .button-container {
+    margin: 0 60px;
+    text-align: center;
+}
+.card .button-container button {
+    position: relative;
+    outline: 0;
+    display: inline-block;
+    background: #ed2553;
+    width: 100%;
+    border-radius: 3px;
+    padding: 15px 0;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 1;
+    border: 0;
+    box-shadow: 1px 1px 2px rgba(0,0,0,.3);
+    text-transform: uppercase;
+    transition: .3s ease;
+    cursor: pointer;
+}
+.card .button-container button span {
+    position: relative;
+    z-index: 1;
+    color: #ffffff;
+    transition: .3s ease;
+}
+.card .button-container button:hover,
+.card .button-container button:active,
+.card .button-container button:focus {
+    background: #c8264a;
+}
+.card .title-max,
+.card .input-container,
+.card .button-container {
+	left: 100px;
+	opacity: 0;
+	visibility: hidden;
+}
+.tips_msg {
+    padding-top: 15px;
+    color: #ed2553;
+    font-weight: 600;
+}
+/*底部*/
+.footer{
+	position: relative;
+	width: 100%;
+	height: 150px;
+}
+.footer-title{
+    position:absolute;
+    top:-50px;
+    left:0;
+}
+
+
+
+
+
+
+
+
+
+
+

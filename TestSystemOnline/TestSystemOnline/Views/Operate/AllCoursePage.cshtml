@@ -1,0 +1,119 @@
+﻿
+@{
+    ViewBag.Title = "课程信息";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Data;
+@{
+    DataTable table = new DataTable();
+    table = Model;
+}
+<div class="operate-box">
+    <div class="back-bottom">
+        <i class="fa fa-book fa-10x"></i>
+    </div>
+    <div class="back-top">
+        <h1 class="title-operate">
+            <i class="fa fa-book"></i>
+            所有课程信息
+            <span style="font-size: 22px;color: grey;">- All course information</span>
+        </h1>
+        <div class="content-operate">
+            <div class="course-card">
+                <div id="course_table">
+                    @{
+                        if (table != null)
+                        {
+                            foreach (DataRow item in table.Rows)
+                            {
+                                <div class="course-temp">
+                                    <div class="course-box" onclick='CourseDetail("@item["ID"]")'>
+                                        <img id="course_img" src="@(item["BookImg"].ToString() == "" ? "/Image/Book/9787111211969.jpg" : item["BookImg"])" alt="" />
+                                        <div class="course-cover-img"></div>
+                                        <div class="course-cover-info">
+                                            <div class="course-name">@(item["CourseName"].ToString().Length > 10 ? item["CourseName"].ToString().Substring(0, 10) + "..." : item["CourseName"])</div>
+                                            <div class="course-compulsory">@(item["Compulsory"].ToString() == "True" ? "必修" : "选修")</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    }
+                </div>
+                <div class="paging">
+                    <div class="course-search">
+                        <select id="dropCourseCountries" name="key">
+                            @{
+                                if (ViewBag.CourseKey == "CourseName")
+                                {
+                                    <option value="CourseName" selected="selected">课程名</option>
+                                    <option value="Name">教师名</option>
+                                    <option value="Book">教材名</option>
+                                }
+                                else if (ViewBag.CourseKey == "Name")
+                                {
+                                    <option value="CourseName">课程名</option>
+                                    <option value="Name" selected="selected">教师名</option>
+                                    <option value="Book">教材名</option>
+                                }
+                                else
+                                {
+                                    <option value="CourseName">课程名</option>
+                                    <option value="Name">教师名</option>
+                                    <option value="Book" selected="selected">教材名</option>
+                                }
+                            }
+                        </select>
+                        <input id="txtCourseSearch" type="text" name="search" placeholder="请输入关键字" value="@ViewBag.SearchValue" />
+                        <button id="btnSearchCourseOK" type="button" onclick="CourseQuery()"><span>搜索</span></button>
+                    </div>
+                    <div class="pading-btn" onclick="GotoPage(@(ViewBag.PageIndex + 1))"><i class="fa fa-angle-right"></i></div>
+                    <ul class="paging-ul">
+                        @{
+                            int totalPages = ViewBag.TotalPages;
+                            for (int i = 0; i < totalPages; i++)
+                            {
+                                string temp = (i + 1).ToString();
+                                <li class="pading-li" onclick="GotoPage(@i)">@temp</li>
+
+                            }
+                        }
+                    </ul>
+                    <div class="pading-btn" onclick="GotoPage(@(ViewBag.PageIndex - 1))"><i class="fa fa-angle-left"></i></div>
+                    <div class="pading-info">
+                        <span id="pading_info">共 @(ViewBag.TotalCount) 条/全 @(ViewBag.TotalPages) 页，当前第 @(ViewBag.PageIndex + 1) 页</span>
+                    </div>
+                </div>
+                <div id="course_show_box" class="course-show-box">
+                    <div class="box-content">
+                        <div class="box_close" onclick="CloseBox()"><i class="fa fa-times-circle fa-2x"></i></div>
+                        <div class="show-box-img">
+                            <img id="show_box_img" src="" alt="" />
+                        </div>
+                        <div class="show-box-info">
+                            <div id="show_box_title" class="show-box-title"></div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">课本&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="course_book"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">必修&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="course_compulsory"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">教师&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="course_teacher"></div>
+                            </div>
+                            <div class="box-info-bar">
+                                <div class="box-info-left">课程信息&nbsp;:&nbsp;</div>
+                                <div class="box-info-right" id="course_message"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="~/Script/Operate/all-course-page.js"></script>
+</div>
+

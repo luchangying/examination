@@ -1,0 +1,227 @@
+﻿
+@{
+    ViewBag.Title = "ExamRelease";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@using System.Data;
+@{
+    DataSet ds = new DataSet();
+    ds = Model;
+}
+<div id="teacher_release" class="teacher-release">
+    <div class="release options">
+        <div id="single_options" class="release-options  selected">
+            <div class="release-btn">
+                <div class="tips-options">
+                    <div class="release-title">
+                        <h2>@ViewBag.CourseName<span> - 单选题</span></h2>
+                    </div>
+                    <div class="release-search">
+                        <input id="txtSingleBox" class="options-search" type="text" name="question" placeholder="请输入关键字" />
+                        <button id="btnSingleOk" class="options-button" type="button"><span><i class="fa fa-search"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="options-list">
+                @{
+                    int numberSingle = 1;
+                    foreach (DataRow item in ds.Tables[0].Rows)
+                    {
+                        <div class="options-item">
+                            <div class="item-check">
+                                <div class="check-box">
+                                    <span><i class="fa fa-check fa-3x"></i></span>
+                                </div>
+                            </div>
+                            <div class="item-question">
+                                <div class="options-id"><span>@item["ID"].ToString()</span></div>
+                                <div class="item-question-top"><span title="@item["TitleSkip"]">@(numberSingle++)、@(item["TitleSkip"])</span></div>
+                                <div class="item-question-down">
+                                    <div class="item-option">A:@(item["OptionTrueA"])</div>
+                                    <div class="item-option">B:@(item["OptionB"])</div>
+                                    <div class="item-option">C:@(item["OptionC"])</div>
+                                    <div class="item-option">D:@(item["OptionD"])</div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+        <div id="judge_options" class="release-options">
+            <div class="release-btn">
+                <div class="tips-options">
+                    <div class="release-title">
+                        <h2>@ViewBag.CourseName<span> - 判断题</span></h2>
+                    </div>
+                    <div class="release-search">
+                        <input id="txtJudgeBox" class="options-search" type="text" name="question" placeholder="请输入关键字" />
+                        <button id="btnJudgeOk" class="options-button" type="button"><span><i class="fa fa-search"></i></span></button>
+                    </div>
+                </div>
+            </div>
+            <div class="options-list">
+                @{
+                    int numberJudge = 1;
+                    foreach (DataRow item in ds.Tables[1].Rows)
+                    {
+                        <div class="options-item judge-item">
+                            <div class="item-check">
+                                <div class="check-box">
+                                    <span><i class="fa fa-check fa-3x"></i></span>
+                                </div>
+                            </div>
+                            <div class="item-question">
+                                <div class="options-id"><span>@item["ID"].ToString()</span></div>
+                                <div class="item-question-top"><span title="@item["TitleSkip"]">@(numberJudge++)、@(item["TitleSkip"])</span></div>
+                                <div class="item-question-down">
+                                    <div class="item-option">A:@(item["OptionTrueA"])</div>
+                                    <div class="item-option">B:@(item["OptionB"])</div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                }
+            </div>
+        </div>
+    </div>
+    <div class="release preview">
+        <div class="preview-box">
+            <div class="exam-info">
+                <div class="exam-info-title">
+                    <span><i class="fa fa-file-alt "></i> 试卷信息</span>
+                </div>
+                <div class="exam-info-form">
+                    <div class="form-item">
+                        <div class="form-item-left"><span>考试名称：</span></div>
+                        <div class="form-item-right">
+                            <input id="txtTestName" type="text" name="TestName" placeholder="请输入试卷名" />
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-left"><span>考试班级：</span></div>
+                        <div class="form-item-right">
+                            <select id="dropTestClass">
+                                @{
+                                    foreach (DataRow item in ds.Tables[2].Rows)
+                                    {
+                                        <option value="@item["ClassID"]">@item["ClassName"]</option>
+                                    }
+                                }
+                            </select>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-left"><span>发布教师：</span></div>
+                        <div class="form-item-right">
+                            <input id="txtReleaseTeacher" type="text" name="TeacherName" value="@ViewBag.TeacherName" disabled="disabled" />
+                            <div class="bar"></div>
+                        </div>
+
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-left"><span>考试课程：</span></div>
+                        <div class="form-item-right">
+                            <input id="txtTestCourse" type="text" name="CourseName" value="@ViewBag.CourseName" disabled="disabled" />
+                            <div class="bar"></div>
+                        </div>
+
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-left"><span>结束时间：</span></div>
+                        <div class="form-item-right">
+                            <input id="txtTestTime" type="datetime-local" name="TestTime" value="@DateTime.Now.ToString("yyyy-MM-ddTHH:mm")"/>
+                            <div class="bar"></div>
+                        </div>
+
+                    </div>
+                    <div class="form-item">
+                        <div class="form-item-left"><span>考试时长：</span></div>
+                        <div class="form-item-right">
+                            <input id="txtTimeLength" type="number" name="LengthOfTime" placeholder="单位：小时" />
+                            <div class="bar"></div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="exam-preview">
+                <div class="exam-preview-title">
+                    <span><i class="fa fa-question-circle"></i> 试题选择</span>
+                </div>
+                <div class="exam-preview-form">
+                    <div class="preview-form">
+                        <span id="single_option_selected">选择题: 0/20</span>
+                        <div class="preview-btn btn-bank-on">
+                            <button id="btnSingleBank" type="button" onclick="SingleBank()" >单选题库</button>
+                        </div>
+                    </div>
+                    <div class="preview-form">
+                        <span id="judge_option_selected">判断题: 0/10</span>
+                        <div class="preview-btn">
+                            <button id="btnJudgeBank" type="button" onclick="JudgeBank()">判断题库</button>
+                        </div>
+                    </div>
+                    <div class="preview-form rom">
+                        <div class="preview-btn">
+                            <button id="btnRandomAdd" type="button">随机试题</button>
+                        </div>
+                        <div class="preview-btn">
+                            <button id="btnReturnBank" type="button" onclick="">重新选题</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="exam-confirm">
+                <div class="exam-confirm-title">
+                    <span><i class="fa fa-check-circle "></i> 确认发布</span>
+                </div>
+                <div class="exam-confirm-form">
+                    <div class="confirm-form">
+                        <div class="confirm-btn">
+                            <button id="btnShowSelectedPaper" type="button">试卷预览</button>
+                        </div>
+                        <div class="confirm-btn">
+                            <button id="btnReleaseOK" type="button">确认发布</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="show-test-paper">
+        <div class="paper-content">
+            <div class="paper-title">
+                <h3 id="txtSelectedTestTile"></h3>
+                <div class="paper-title-info">
+                    <div class="class-info-box">
+                        <ul>
+                            <li>考试科目：<span id="txtSelectedCourse"></span></li>
+                            <li>结束时间：<span id="txtSelectedTestTime"></span></li>
+                            <li>发布教师：<span id="txtSelectedTeacher"></span></li>
+                            <li>考试时长：<span id="txtSelectedTimeLength"></span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="close-paper" onclick="HideSelectedPaper()">
+                    <i class="fa fa-window-close fa-2x"></i>
+                </div>
+            </div>
+            <div id="paper_options" class="paper-options">
+            </div>
+        </div>
+    </div>
+    @*信息提示框*@
+    <div id="message_box" class="message-box" onclick="CloseMessageBox()">
+        <div id="box_info" class="box-info">
+            <div class="box-close-ico">
+                <i class="fa fa-window-close fa-2x"></i>
+            </div>
+            <div id="box_centent_info" class="box-content-info">
+            </div>
+        </div>
+    </div>
+</div>
+<script src="~/Script/Teacher/exam-release.js"></script>
